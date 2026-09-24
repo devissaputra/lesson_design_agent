@@ -2,32 +2,59 @@
 
 ## Intended use
 
-Lesson Design Agent is meant for research, prototyping, and educational design work. It should help people inspect a learning-related signal or decision, not make consequential decisions on their behalf.
+Lesson Design Agent is a design-support prototype for instructional planning. It helps make design assumptions visible; it does not replace the instructor, instructional designer, subject-matter expert, accessibility specialist, or institutional policy process.
 
-## Human oversight
+## Main risk: false pedagogical authority
 
-A person should be able to see what evidence produced an output, question it, and override it. If the system cannot explain a recommendation well enough for meaningful review, the recommendation should not be used in a high-stakes setting.
+A structured output can look more authoritative than it is.
+
+The Bloom-style verb inference is a heuristic. A matched verb does not prove that an objective has been classified correctly, and a cognitively demanding verb does not guarantee that the activity or assessment actually elicits that demand.
+
+Outputs should therefore remain editable and reviewable.
+
+## Accessibility
+
+The repository generates accessibility **prompts**, not accessibility certification.
+
+Do not treat the prompts as proof that a lesson complies with disability law, institutional standards, WCAG, procurement requirements, or an individual accommodation plan.
+
+Known learner needs should be supplied by authorized people through appropriate institutional processes. Do not infer disability or accessibility needs from behavioral data.
+
+## Learner variability
+
+A lesson that works for one group may fail for another because of differences in language, prior knowledge, technology access, cultural context, confidence, disability, workload, or learning environment.
+
+Designers should use the audience and prerequisite fields to expose these assumptions rather than treating the scaffold as universal.
+
+## Assessment risk
+
+The assessment suggestion is a design prompt. It does not establish validity, fairness, reliability, appropriate stakes, or security.
+
+Do not use the prototype by itself to create high-stakes grading, admissions, certification, or employment assessments.
+
+## Bias and representation
+
+Examples, cases, media, and tasks can reproduce stereotypes or exclude relevant perspectives even when the lesson structure appears sound.
+
+Human review should consider whose knowledge is represented, whether examples are appropriate for the audience, and whether participation requirements create unnecessary barriers.
 
 ## Privacy
 
-Collect only the data the study actually needs. Remove direct identifiers, document retention periods, restrict access to raw traces, and avoid storing free text, audio, video, or other sensitive material unless it is essential to the research question.
+The current baseline does not require learner-level data.
 
-## Fairness
-
-Overall accuracy can hide uneven errors. When it is lawful and ethically appropriate, inspect false alarms, missed support, calibration, and recommendation quality across relevant groups and contexts. Do not treat a single fairness metric as proof that a system is fair.
-
-## Educational risk
-
-A technically correct output can still lead to a poor learning experience. Watch for labels that become self-fulfilling, excessive nudging, over-support that removes productive struggle, or analytics that reward surveillance rather than learning.
+Avoid adding identifiable learner records, disability information, accommodation documents, private submissions, or behavioral traces unless they are genuinely necessary, ethically justified, and protected by an appropriate governance process.
 
 ## Uses excluded from this prototype
 
-- autonomous grading, admissions, or disciplinary decisions
-- employment decisions
-- psychological or medical diagnosis
-- covert monitoring or surveillance
-- any deployment where affected people cannot understand or challenge the output
+Do not use it as:
 
-## Before a real-user study or deployment
+- an autonomous curriculum approval system
+- a substitute for subject-matter review
+- accessibility certification
+- a high-stakes assessment generator
+- an automated evaluation of teacher competence
+- a system for inferring learner disability or psychological traits
 
-Document consent or another lawful basis, data governance, access controls, subgroup evaluation, calibration where probabilities are used, human escalation paths, and clear rollback criteria.
+## Before real deployment
+
+Define who owns the lesson, who reviews it, what evidence is required before publication, which accessibility standards apply, how local curriculum requirements are checked, how errors are corrected, and how instructors can reject or modify the system's suggestions.
