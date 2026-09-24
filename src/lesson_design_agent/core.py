@@ -155,6 +155,8 @@ def _candidate_bases(token: str) -> set[str]:
 
     if token.endswith("ies") and len(token) > 3:
         candidates.add(token[:-3] + "y")
+    if token.endswith("ying") and len(token) > 5:
+        candidates.add(token[:-4] + "y")
     if token.endswith("ing") and len(token) > 4:
         stem = token[:-3]
         candidates.add(stem)
