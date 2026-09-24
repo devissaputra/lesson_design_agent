@@ -5,10 +5,24 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lesson-design-agent"
 version = "0.1.0"
-description = "Deterministic lesson planning baseline for Bloom level inference, time allocation, and accessibility checks."
+description = "Deterministic lesson-design scaffold for objective analysis, adaptive sequencing, assessment alignment prompts, accessibility prompts, and review flags."
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Devis Wawan Saputra"}]
+readme = "README.md"
+keywords = [
+  "ai-in-education",
+  "aied",
+  "instructional-design",
+  "lesson-design",
+  "learning-objectives",
+  "blooms-taxonomy",
+  "universal-design-for-learning",
+  "curriculum-design",
+]
+
+[project.urls]
+Repository = "https://github.com/devissaputra/lesson_design_agent"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
