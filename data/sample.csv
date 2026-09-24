@@ -1,2 +1,5 @@
-topic,objective,minutes
-Risk analysis,Analyze operational risk,90
+topic,objective,minutes,audience,delivery_mode,prior_knowledge,class_size,assessment_mode,accessibility_needs
+Operational risk analysis,"Analyze operational risks and justify a response recommendation.",90,early-career operations analysts,hybrid,basic probability and process mapping,24,case analysis,"captions for video; screen-reader compatible digital materials"
+Cybersecurity basics,"Explain phishing indicators in a workplace email.",45,new employees,online,basic email use,30,short explanation,"captions for video"
+Spreadsheet modeling,"Apply relative and absolute references to build a small budget model.",60,first-year business students,in-person,basic spreadsheet navigation,28,practical task,"large-print worksheet option"
+Prototype design,"Design and revise a low-fidelity service prototype for a defined user problem.",75,product design students,in-person,prior user-research methods,20,artifact critique,"multiple ways to present design rationale"
