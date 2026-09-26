@@ -1,0 +1,8 @@
+{
+  "kind": "illustrative_calculation",
+  "note": "Illustrative time-budget arithmetic; not a scored lesson.",
+  "outputs": {
+    "total minutes: 5+10+10+5": 30,
+    "share of two 10-minute phases": 0.6666666666666666
+  }
+}

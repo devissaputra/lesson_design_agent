@@ -1,0 +1,30 @@
+{
+  "question": "How can lesson-planning assumptions be made explicit?",
+  "data": "Supplied objective, duration, delivery mode and accessibility needs.",
+  "method": "Analyze objective wording; allocate lesson phases; attach assessment and accessibility prompts; expose review flags.",
+  "formula": "Allocated phase minutes sum to the requested lesson duration.",
+  "interpretation": "The output is a rule-generated planning blueprint, not a validated lesson. Bloom-verb interpretation, accessibility suitability and assessment alignment still require a teacher’s contextual judgment.",
+  "status": "SYNTHETIC / RULE-BASED PROTOTYPE | no educational validity claim",
+  "source": "results/review_examples.json",
+  "rows": [
+    {
+      "label": "total minutes: 5+10+10+5",
+      "path": [
+        "outputs",
+        "total minutes: 5+10+10+5"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "share of two 10-minute phases",
+      "path": [
+        "outputs",
+        "share of two 10-minute phases"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Worked example — illustrative, not a measured research result",
+  "evidence_note": "Illustrative inputs and calculations are in scripts/review_examples.py.",
+  "finding": "This rule-based lesson planner converts a supplied objective and teaching constraints into a structured lesson blueprint. It allocates time across phases, proposes assessment and accessibility prompts, and flags missing or ambiguous planning inputs. The implementation is transparent and testable, while the resulting activities remain proposals that require contextual instructional review."
+}

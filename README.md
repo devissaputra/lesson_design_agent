@@ -1,14 +1,29 @@
 # Lesson Design Agent
 
+This rule-based lesson planner converts a supplied objective and teaching constraints into a structured lesson blueprint. It allocates time across phases, proposes assessment and accessibility prompts, and flags missing or ambiguous planning inputs. The implementation is transparent and testable, while the resulting activities remain proposals that require contextual instructional review.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** 28 existing unittest checks passed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 > Transparent lesson-design scaffold for objective analysis, adaptive sequencing, assessment-alignment prompts, accessibility prompts, and human review.
 
 [![CI](https://github.com/devissaputra/lesson_design_agent/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/lesson_design_agent/actions/workflows/ci.yml)
 
-![Lesson Design Agent workflow](assets/architecture.svg)
 
 **Area:** AI in Education (AIEd) · Instructional Design & Curriculum Intelligence  
 **Status:** working research prototype  
-**Author:** Devis Wawan Saputra
+**Author:** Devis Saputra
 
 ## What this project is for
 
@@ -46,7 +61,6 @@ Topic, objective, and duration are required to run the software. Missing context
 
 ## How it works
 
-![Lesson Design Agent data and reasoning flow](assets/data_flow.svg)
 
 The baseline follows this path:
 
@@ -155,7 +169,6 @@ These are designer prompts rather than automatic rejection rules.
 
 ## Synthetic demo
 
-![Synthetic demo snapshot for Lesson Design Agent](assets/demo_snapshot.svg)
 
 The bundled 90-minute example uses:
 
@@ -199,7 +212,6 @@ The current baseline uses only the Python standard library.
 
 ## Evaluation view
 
-![Lesson Design Agent evaluation checklist](assets/evaluation_dashboard.svg)
 
 The evaluation graphic shows evidence a real study should collect. Its bars are illustrative and do not report measured system performance.
 

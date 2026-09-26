@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Allocated phase minutes sum to the requested lesson duration.
+# The output is a rule-generated planning blueprint, not a validated lesson. Bloom-verb interpretation, accessibility suitability and assessment alignment still require a teacher’s contextual judgment.
+
 import math
 import re
 from collections.abc import Iterable
